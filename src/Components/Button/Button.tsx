@@ -9,16 +9,16 @@ const poppin = Poppins({
   display: 'swap', 
 });
 function Button({value,dispatchBtn}:ButtonLists) {
-  const {dispatch,setValue,btnState} = useCustomHook();
+  const {dispatch} = useCustomHook();
 
   //handle style of button
-  let btnAC = value === "AC"  ? "relative bottom-16 ":"";
-  let btnZero = value === "0" ? "relative bottom-12":"";
-  let btnDel = value === "DEL" ? "relative bottom-16":"";
-  let btnDot = value === "." ? "relative bottom-12":"";
-  let btnModuls = value === "=" ? `relative bottom-12 `:""; 
-  let btnPlus = value === "+" ? poppin.className : "";
-  let btnMulti = value === "*" ? poppin.className : "";
+  const btnAC = value === "AC"  ? "relative bottom-16 ":"";
+  const btnZero = value === "0" ? "relative bottom-12":"";
+  const btnDel = value === "DEL" ? "relative bottom-16":"";
+  const btnDot = value === "." ? "relative bottom-12":"";
+  const btnModuls = value === "=" ? `relative bottom-12 `:""; 
+  const btnPlus = value === "+" ? poppin.className : "";
+  const btnMulti = value === "*" ? poppin.className : "";
 
   const handleClick = () => {
     // if(dispatchBtn.payload?.value !== undefined){

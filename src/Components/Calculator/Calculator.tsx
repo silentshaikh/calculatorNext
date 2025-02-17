@@ -1,6 +1,6 @@
 "use client";
 import Input from '../Input/Input'
-import { buttonList } from '@/utils/buttonList'
+// import { buttonList } from '@/utils/buttonList'
 import Button from '../Button/Button';
 import Calculation from '../Calculations/Calculation';
 import { useCustomHook } from '@/Contexts/Context';

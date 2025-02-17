@@ -44,7 +44,7 @@ function Context({ children }: ContextChild) {
         }
         return state;
       case ACTION.CALCULATE_NUMBER:
-        let evlNum = value + action.payload.value;
+        const evlNum = value + action.payload.value;
         setValue(evlNum);
         state = { result: evlNum };
         return state;
@@ -53,7 +53,7 @@ function Context({ children }: ContextChild) {
         state = { result: "" };
         return state;
       case ACTION.DELETE_LAST:
-        let delValue = value.slice(0, -1);
+        const delValue = value.slice(0, -1);
         setValue(delValue);
         state = { result: delValue };
         return state;
