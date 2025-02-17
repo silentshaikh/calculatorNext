@@ -1,9 +1,12 @@
 "use client";
-import Input from '../Input/Input'
-import Button from '../Button/Button';
+// import Input from '../Input/Input'
+// import Button from '../Button/Button';
 // import Calculation from '../Calculations/Calculation';
 import { useCustomHook } from '@/Contexts/Context';
 import Calculation from '../Calculations/Calculation';
+import Input from '../Input/Input';
+import Button from '../Button/Button';
+// import Calculation from '../Calculations/Calculation';
 
 function Calculator() {
   const custmHook = useCustomHook();
